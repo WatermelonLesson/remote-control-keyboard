@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 10px;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	
+	width: 100vw;
+	min-height: 100vh;
+	
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100%;
+	
+	align-content: space-around;
+	justify-items: center;
+}
+
+form.remote-control {
+	display: grid;
+	
+	grid-template-columns: repeat(3, 33%);
+	grid-template-rows: repeat(3, 33%);
+	
+	width: 50%;
+	
+	align-content: space-around;
+	justify-content: space-around;
+}
+
+form.remote-control > input {
+	box-sizing: border-box;
+	border: 0.1rem solid #808080;
+	width: 100%;
+	color: #fbfbff;
+	background-color: #2ec4b6;
+	
+	border-radius: 100px;
+	
+	font-family: Verdana, sans-serif;
+	justify-self: center;
+}
+
+form.remote-control > input#up-button {
+	grid-row: 1;
+	grid-column: 2;
+}
+
+form.remote-control > input#left-button, form.remote-control > input#right-button, form.remote-control >input#submit-button {
+	grid-row: 2;
+}
+
+form.remote-control > input#submit-button {
+	grid-column: 2;
+}
+
+form.remote-control > input#right-button {
+	grid-column: 3;
+}
+
+form.remote-control > input#down-button {
+	grid-row: 3;
+	grid-column: 2;
+}
+
+div.message {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+
+div.keyboard {
+	width: 100vw;
+	height: 100%;
+	
+	display: grid;
+	
+	grid-template-columns: 100%;
+	
+	justify-items: center;
+}
+
+div.keyboard > ul {
+	list-style-type: none;
+	
+	width: 80%;
+	display: flex;
+	
+	justify-content: center;
+}
+
+div.keyboard > ul > li {
+	width: 100%;
+	
+	font-size: 1rem;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	
+	box-sizing: border-box;
+	border: 0.1rem solid #808080;
+	
+	text-transform: lowercase;
+	color: #FBFBFF;
+	background-color: #2EC4B6;
+}
+
+div.keyboard.shift-enabled > ul > li {
+	text-transform: uppercase;
+}
+
+div.keyboard > ul > li.current-key {
+	background-color: #35A7FF;
+}
+
+div.keyboard > ul > li.key-selected {
+	background-color: #38618C;
+}
+
+div.message {
+	max-width: 100vw;
+	
+	display: grid;
+	
+	grid-template-rows: auto;
+	grid-template-columns: 100%;
+	
+	align-content: space-around;
+}
+
+div.message > * {
+	min-width: 100%;
+	max-width: 100%;
+	
+	background-color: #808080;
+}
+
+div.input > form {
+	min-width: 100%;
+	max-width: 100%;
+	display: flex;
+}

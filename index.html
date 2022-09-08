@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Remote Control</title>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+	<body>
+		<h1>Remote Control</h1>
+
+		<form class="remote-control" id="remote-control">
+			<input type="button" id="up-button" value="Up">
+			<input type="button" id="left-button" value="Left" disabled>
+			<input type="button" id="right-button" value="Right">
+			<input type="button" id="down-button" value="Down">
+
+			<input type="submit" id="submit-button" value="Select">
+		</form>
+
+		<div class="keyboard">
+			<ul>
+				<li class="key" data-lowercase="`" data-uppercase="~">` <sup>~</sup></li>
+				<li class="key" data-lowercase="1" data-uppercase="!">1 <sup>!</sup></li>
+				<li class="key" data-lowercase="2" data-uppercase="@">2 <sup>@</sup></li>
+				<li class="key" data-lowercase="3" data-uppercase="#">3 <sup>#</sup></li>
+				<li class="key" data-lowercase="4" data-uppercase="$">4 <sup>$</sup></li>
+				<li class="key" data-lowercase="5" data-uppercase="%">5 <sup>%</sup></li>
+				<li class="key" data-lowercase="6" data-uppercase="^">6 <sup>^</sup></li>
+				<li class="key" data-lowercase="7" data-uppercase="&">7 <sup>&</sup></li>
+				<li class="key" data-lowercase="8" data-uppercase="*">8 <sup>*</sup></li>
+				<li class="key" data-lowercase="9" data-uppercase="(">9 <sup>(</sup></li>
+				<li class="key" data-lowercase="0" data-uppercase=")">0 <sup>)</sup></li>
+				<li class="key" data-lowercase="-" data-uppercase="_">- <sup>_</sup></li>
+				<li class="key" data-lowercase="=" data-uppercase="+">= <sup>+</sup></li>
+				<li class="key control-character" data-lowercase="0" data-uppercase="0">Backspace</li>
+			</ul>
+
+			<ul>
+				<li class="key current-key" data-lowercase="q" data-uppercase="Q">Q</li>
+				<li class="key" data-lowercase="w" data-uppercase="W">W</li>
+				<li class="key" data-lowercase="e" data-uppercase="E">E</li>
+				<li class="key" data-lowercase="r" data-uppercase="R">R</li>
+				<li class="key" data-lowercase="t" data-uppercase="T">T</li>
+				<li class="key" data-lowercase="y" data-uppercase="Y">Y</li>
+				<li class="key" data-lowercase="u" data-uppercase="U">U</li>
+				<li class="key" data-lowercase="i" data-uppercase="I">I</li>
+				<li class="key" data-lowercase="o" data-uppercase="O">O</li>
+				<li class="key" data-lowercase="p" data-uppercase="P">P</li>
+				<li class="key" data-lowercase="[" data-uppercase="{">[ <sup>{</sup></li>
+				<li class="key" data-lowercase="]" data-uppercase="}">] <sup>}</sup></li>
+				<li class="key" data-lowercase="\" data-uppercase="|">\ <sup>|</sup></li>
+			</ul>
+
+			<ul>
+				<li class="key control-character" data-lowercase="1" data-uppercase="1">Caps lock</li>
+				<li class="key" data-lowercase="a" data-uppercase="A">A</li>
+				<li class="key" data-lowercase="s" data-uppercase="S">S</li>
+				<li class="key" data-lowercase="d" data-uppercase="D">D</li>
+				<li class="key" data-lowercase="f" data-uppercase="F">F</li>
+				<li class="key" data-lowercase="g" data-uppercase="G">G</li>
+				<li class="key" data-lowercase="h" data-uppercase="H">H</li>
+				<li class="key" data-lowercase="j" data-uppercase="J">J</li>
+				<li class="key" data-lowercase="k" data-uppercase="K">K</li>
+				<li class="key" data-lowercase="l" data-uppercase="L">L</li>
+				<li class="key" data-lowercase=";" data-uppercase=":">; <sup>:</sup></li>
+				<li class="key" data-lowercase="'" data-uppercase="&#34;">' <sup>&#34;</sup></li>
+				<li class="key control-character" date-lowercase="3" data-uppercase="3">Return</li>
+			</ul>
+
+			<ul>
+				<li class="key control-character" data-lowercase="2" data-uppercase="2">Shift</li>
+				<li class="key" data-lowercase="z" data-uppercase="Z">Z</li>
+				<li class="key" data-lowercase="x" data-uppercase="X">X</li>
+				<li class="key" data-lowercase="c" data-uppercase="C">C</li>
+				<li class="key" data-lowercase="v" data-uppercase="V">V</li>
+				<li class="key" data-lowercase="b" data-uppercase="B">B</li>
+				<li class="key" data-lowercase="n" data-uppercase="N">N</li>
+				<li class="key" data-lowercase="m" data-uppercase="M">M</li>
+				<li class="key" data-lowercase="," data-uppercase="<">, <sup>&lt;</sup></li>
+				<li class="key" data-lowercase="." data-uppercase="&gt;">. <sup>&gt;</sup></li>
+				<li class="key" data-lowercase="/" data-uppercase="?">/ <sup>?</sup></li>
+				<li class="key control-character" data-lowercase="2" data-uppercase="2">Shift</li>
+			</ul>
+
+			<ul>
+				<li class="key space-key" data-lowercase="&nbsp;" data-uppercase="&nbsp;">&nbsp;</li>
+			</ul>
+		</div>
+
+		<div class="message">
+			<div class="path"></div>
+			
+			<div class="input">
+				<form class="message-input">
+					<input type="text" id="user-msg" value="The quick brown fox jumps over the lazy dog.">
+					
+					<textarea id="user-direction">Down, Down, Select (Shift), Up, Up, Right, Right, Right, Right, Select (T), Down, Right, Right, Select (h), Up, Left, Left, Left, Left, Select (e), Down, Down, Down, Select ( ), Up, Up, Up, Select (q), Right, Right, Right, Right, Right, Right, Select (u), Right, Select (i), Down, Down, Left, Left, Left, Left, Select (c), Up, Right, Right, Right, Right, Right, Select (k), Down, Down, Select ( ), Up, Right, Right, Right, Right, Right, Select (b), Up, Up, Left, Left, Select (r), Right, Right, Right, Right, Right, Select (o), Left, Left, Left, Left, Left, Left, Left, Select (w), Down, Down, Right, Right, Right, Right, Right, Select (n), Down, Select ( ), Up, Up, Right, Right, Right, Right, Select (f), Up, Right, Right, Right, Right, Select (o), Down, Down, Left, Left, Left, Left, Left, Left, Select (x), Down, Select ( ), Up, Up, Right, Right, Right, Right, Right, Right, Right, Select (j), Up, Left, Select (u), Down, Down, Right, Select (m), Up, Up, Right, Right, Select (p), Down, Left, Left, Left, Left, Left, Left, Left, Select (s), Down, Down, Select ( ), Up, Up, Up, Right, Right, Right, Right, Right, Right, Right, Right, Select (o), Down, Down, Left, Left, Left, Left, Select (v), Up, Up, Left, Left, Select (e), Right, Select (r), Down, Down, Down, Select ( ), Up, Up, Up, Right, Right, Right, Right, Select (t), Down, Right, Right, Select (h), Up, Left, Left, Left, Left, Select (e), Down, Down, Down, Select ( ), Up, Up, Right, Right, Right, Right, Right, Right, Right, Right, Right, Select (l), Left, Left, Left, Left, Left, Left, Left, Left, Select (a), Down, Select (z), Up, Up, Right, Right, Right, Right, Select (y), Down, Down, Down, Select ( ), Up, Up, Right, Right, Right, Select (d), Up, Right, Right, Right, Right, Right, Select (o), Down, Left, Left, Left, Select (g), Down, Right, Right, Right, Right, Select (.)</textarea>
+					
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+
+		<script src="redux.js"></script>
+	</body>
+</html>
